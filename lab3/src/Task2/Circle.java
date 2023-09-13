@@ -1,4 +1,4 @@
-package Task3;
+package Task2;
 
 public class Circle {
     private double radius;
@@ -23,5 +23,16 @@ public class Circle {
 
     public void setCenter(Point center) {
         this.center = center;
+    }
+
+    public double area() {
+        return Math.PI * radius * radius;
+    }
+
+    public double length() {
+        return 2 * Math.PI * radius;
+    }
+    public String toString() {
+        return "Окружность с центрм - " + getCenter().toString() + " и радиусом " + radius;
     }
 }

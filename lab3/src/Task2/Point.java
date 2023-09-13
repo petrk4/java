@@ -1,17 +1,12 @@
 package Task2;
 
-public class Ball {
+public class Point {
     private double x;
     private double y;
 
-    public Ball(double x, double y) {
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
-    }
-
-    public Ball() {
-        x = 0.0;
-        y = 0.0;
     }
 
     public double getX() {
@@ -30,17 +25,7 @@ public class Ball {
         this.y = y;
     }
 
-    public void setXY(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    public void move(double xDisp, double yDisp) {
-        this.x += xDisp;
-        this.y += yDisp;
-    }
-
     public String toString() {
-        return this.x + " x, " + this.y + " y";
+        return "(" + x + ", " + y + ")";
     }
 }
