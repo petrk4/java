@@ -95,10 +95,12 @@ class OnlineStore {
     private void initializeProducts() {
         productList.add(new Product("Ноутбук", 800.0, ProductCategory.ELECTRONICS));
         productList.add(new Product("Футболка", 20.0, ProductCategory.CLOTHING));
+        productList.add(new Product("Штаны", 100.0, ProductCategory.CLOTHING));
+        productList.add(new Product("Телефон", 500.0, ProductCategory.ELECTRONICS));
     }
 
     public void login(String username, String password) {
-        if ("user".equals(username) && "password".equals(password)) {
+        if ("petrk".equals(username) && "123".equals(password)) {
             currentUser = new User(username, password);
             System.out.println("Вы успешно вошли как " + username);
         } else {
