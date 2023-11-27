@@ -15,7 +15,7 @@ public class DirectoryReader {
     }
 
     public static void main(String[] args) {
-        String directoryPath = "C:\\Users\\Darya Starikova\\IdeaProjects\\catalog";
+        String directoryPath = "C:\\Users\\Kritsyn\\IdeaProjects\\catalog";
         List<String> fileList = readDirectory(directoryPath);
 
         System.out.println("First 5 elements in the directory:");
